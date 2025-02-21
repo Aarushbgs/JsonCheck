@@ -11,6 +11,10 @@ app.get("/bfhl", (req, res) => {
   res.status(200).json({ operation_code: 1 });
 });
 
+app.get("/", (req, res) => {
+  res.send("Hii...");
+});
+
 app.post("/bfhl", (req, res) => {
   try {
     const { data } = req.body;
